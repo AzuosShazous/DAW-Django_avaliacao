@@ -40,3 +40,5 @@ Por fim, crie um superusuário:
 ```bash
 python3 manage.py createsuperuser
 ```
+
+~Este tutorial de execução está incompleto, uma vez que não fornece suporte a outros sistemas operacional além do Linux. Além do mais, algumas etapas estão com informações incompletas.~
