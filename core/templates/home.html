@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Domínio: Orientação de TCC/Estágio</h1>
+<p>Escolha entre as entidades abaixo:</p>
+<ul>
+    <li><a href="{% url 'lista_professores' %}">Professores</a></li>
+    <li><a href="{% url 'lista_alunos' %}">Alunos</a></li>
+</ul>
+{% endblock %}

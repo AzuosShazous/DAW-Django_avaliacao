@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content%}
+    <h1>{% if professor %}Editar{% else %}Criar{% endif %} Professor</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Nome: <input type="text" name="nome" value="{{ professor.nome}}" required></label>
+        <label>Departamento: <input type="text" name="departamento" value="{{ professor.departamento}}" required></label>
+        <button type="submit">Salvar</button>
+    </form>
+{% endblock %}

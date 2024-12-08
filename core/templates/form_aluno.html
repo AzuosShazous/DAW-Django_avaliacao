@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{% if aluno %}Editar{% else %}Criar{% endif %} Aluno</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Nome: <input type="text" name="nome" value="{{ aluno.nome }}" required></label>
+        <label>E-mail: <input type="email" name="email" value="{{ aluno.email }}" required></label>
+        <label>Forma de conclusão: <input type="text" name="forma_conclusao" value="{{ aluno.forma_conclusao }}" required></label>
+        <label>Professor:
+            <select name="professor" required>
+                <option value="">Selecione um professor orientador</option>
+                {% for professor in professores %}
+                    <option value="{{ professor.id }}" {% if aluno.professor.id == professor.id %}selected{% endif %}>{{ professor.nome }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <button type="submit">Salvar</button>
+    </form>
+{% endblock %}
