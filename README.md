@@ -41,4 +41,4 @@ Por fim, crie um superusuário:
 python3 manage.py createsuperuser
 ```
 
-~Este tutorial de execução está incompleto, uma vez que não fornece suporte a outros sistemas operacional além do Linux. Além do mais, algumas etapas estão com informações incompletas.~
+~Este tutorial de execução está incompleto, uma vez que não fornece suporte a outros sistemas operacionais além do Linux. Ademais, algumas etapas estão com informações incompletas.~
