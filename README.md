@@ -1,6 +1,6 @@
 # Avaliação de DAW - Mini Sistema web
 
-Este repositório contém um sistema web referente à atividade de IAW.
+Este repositório contém um sistema web referente à atividade de DAW.
 
 # Domínio: orientação de TCC/Estágio
 
